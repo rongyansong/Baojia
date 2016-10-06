@@ -5,6 +5,7 @@ window.addEventListener('touchmove', function (e) {
     e.preventDefault();
 });
 var index = 2;
+var totalAngle= 0;
 window.addEventListener('DOMContentLoaded', function () {
     //音乐暂停、播放
     music();
@@ -25,7 +26,6 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 function startRotate(){
-    var totalAngle = 0;
     //换页
     touch.on('.target', 'touchstart', function (ev) {
         ev.startRotate();
